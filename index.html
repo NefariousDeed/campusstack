@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Campus Stack - Free Chrome Extensions for Students</title>
+  <meta name="description" content="Free Chrome extensions built for college students. Track assignments, find professor ratings, and more - all without leaving your browser.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="/" class="nav-logo">
+        <span class="logo-icon">🎓</span>
+        CampusStack
+      </a>
+      <div class="nav-links">
+        <a href="#extensions">Extensions</a>
+        <a href="#about">About</a>
+        <a href="assignwatch/">AssignWatch</a>
+        <a href="proflens/">ProfLens</a>
+        <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer">☕ Support</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-badge animate-up">
+        <span class="dot"></span>
+        2 extensions live · more on the way
+      </div>
+      <h1 class="animate-up delay-1">Browser tools built for <span class="accent">college students</span></h1>
+      <p class="animate-up delay-2">Free Chrome extensions that plug directly into the sites you already use - Canvas, course registration, and more.</p>
+      <div class="hero-ctas animate-up delay-3">
+        <a href="#extensions" class="btn-primary">
+          <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path d="M4 6h16M4 12h16M4 18h7"></path></svg>
+          Browse Extensions
+        </a>
+        <a href="https://github.com/nefariousdeed" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.92.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"></path></svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-number animate-up" data-target="2">2</span>
+        <span class="stat-label animate-up delay-1">Extensions Live</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number animate-up delay-1">100%</span>
+        <span class="stat-label animate-up delay-2">Free Forever</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number animate-up delay-2">MV3</span>
+        <span class="stat-label animate-up delay-3">Manifest V3</span>
+      </div>
+      <div class="stat">
+        <span class="stat-number animate-up delay-3" data-target="0">0</span>
+        <span class="stat-label animate-up delay-4">Data Collected</span>
+      </div>
+    </div>
+  </div>
+
+  <section class="extensions" id="extensions">
+    <div class="container">
+      <div class="section-label animate-up">Extensions</div>
+      <h2 class="section-title animate-up delay-1">Tools that work where you do</h2>
+      <p class="section-sub animate-up delay-2">No new apps to learn. Everything lives in your browser, on the pages you already visit.</p>
+
+      <div class="ext-grid">
+        <div class="ext-card blue animate-up">
+          <div class="ext-content">
+            <div class="ext-icon blue">📋</div>
+            <div class="ext-name">AssignWatch</div>
+            <div class="ext-tagline">Never miss a Canvas deadline again. See all your upcoming assignments in one clean popup - no login required.</div>
+            <ul class="ext-features">
+              <li><span class="check blue">✓</span>Live assignment feed pulled from Canvas LMS</li>
+              <li><span class="check blue">✓</span>Due-date notifications with advance alerts</li>
+              <li><span class="check blue">✓</span>Google Calendar export for fast planning</li>
+              <li><span class="check blue">✓</span>Background refresh keeps deadlines current</li>
+              <li><span class="check blue">✓</span>Fully local - your Canvas token never leaves your device</li>
+            </ul>
+            <div class="ext-footer">
+              <div class="ext-meta">
+                <span class="ext-tag free">Free</span>
+                <span class="ext-tag live">Live</span>
+                <span class="ext-tag mv3">MV3</span>
+              </div>
+              <div class="ext-actions">
+                <a href="https://chromewebstore.google.com/detail/assignwatch/hmjgbdkllpommkibiebcnhfihbcpmija" target="_blank" rel="noopener noreferrer" class="btn-ext blue">Add to Chrome</a>
+                <a href="assignwatch/" class="btn-ghost btn-ext" style="font-size:0.78rem; padding:7px 14px;">Details →</a>
+              </div>
+            </div>
+          </div>
+          <div class="ext-preview">
+            <div class="popup-mockup blue-glow">
+              <div class="popup-header">
+                <div class="popup-header-icon" style="background:linear-gradient(135deg,#1d4ed8,#3b82f6)">📋</div>
+                <div>
+                  <div class="popup-header-title">AssignWatch</div>
+                  <div class="popup-header-sub">3 due this week</div>
+                </div>
+              </div>
+              <div class="popup-body">
+                <div class="popup-row">
+                  <div class="popup-row-dot" style="background:#ef4444"></div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-70"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(239,68,68,0.12);color:#ef4444">Overdue</div>
+                </div>
+                <div class="popup-row">
+                  <div class="popup-row-dot" style="background:#f59e0b"></div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-50"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(245,158,11,0.12);color:#f59e0b">Today</div>
+                </div>
+                <div class="popup-row">
+                  <div class="popup-row-dot" style="background:#3b82f6"></div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-70"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(59,130,246,0.12);color:#3b82f6">3 days</div>
+                </div>
+                <div class="popup-row" style="opacity:0.45">
+                  <div class="popup-row-dot" style="background:#10b981"></div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-70"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(16,185,129,0.1);color:#10b981">Done</div>
+                </div>
+              </div>
+              <div class="popup-footer">
+                <div style="display:flex;align-items:center;gap:5px">
+                  <div class="popup-footer-dot"></div>
+                  <div class="popup-footer-text">Canvas connected</div>
+                </div>
+                <div class="popup-footer-text" style="color:#3b82f6">⚙</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="ext-card purple animate-up delay-2">
+          <div class="ext-content">
+            <div class="ext-icon purple">🔍</div>
+            <div class="ext-name">ProfLens</div>
+            <div class="ext-tagline">RateMyProfessors ratings overlaid directly on your course registration page. Pick better professors before you commit.</div>
+            <ul class="ext-features">
+              <li><span class="check purple">✓</span>Auto-detects professor names on registration pages</li>
+              <li><span class="check purple">✓</span>Shows live ratings, difficulty, and take-again stats</li>
+              <li><span class="check purple">✓</span>Works across most university course catalogs</li>
+              <li><span class="check purple">✓</span>Session cache keeps the page fast after first load</li>
+              <li><span class="check purple">✓</span>Zero tracking and zero personal data collection</li>
+            </ul>
+            <div class="ext-footer">
+              <div class="ext-meta">
+                <span class="ext-tag free">Free</span>
+                <span class="ext-tag live">Live</span>
+                <span class="ext-tag mv3">MV3</span>
+              </div>
+              <div class="ext-actions">
+                <a href="https://chromewebstore.google.com/detail/proflens/adcnbjmmnhijnghhgcfhgnbnobldcikc" target="_blank" rel="noopener noreferrer" class="btn-ext purple">Add to Chrome</a>
+                <a href="proflens/" class="btn-ghost btn-ext" style="font-size:0.78rem; padding:7px 14px;">Details →</a>
+              </div>
+            </div>
+          </div>
+          <div class="ext-preview">
+            <div class="popup-mockup purple-glow">
+              <div class="popup-header">
+                <div class="popup-header-icon" style="background:linear-gradient(135deg,#6d28d9,#8b5cf6)">🔍</div>
+                <div>
+                  <div class="popup-header-title">ProfLens</div>
+                  <div class="popup-header-sub">4 professors found</div>
+                </div>
+              </div>
+              <div class="popup-body">
+                <div class="popup-row">
+                  <div style="font-size:9px;color:#f59e0b;letter-spacing:1px;flex-shrink:0">★★★★★</div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-50"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(139,92,246,0.12);color:#8b5cf6">5.0</div>
+                </div>
+                <div class="popup-row">
+                  <div style="font-size:9px;color:#f59e0b;letter-spacing:1px;flex-shrink:0">★★★★☆</div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-70"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(139,92,246,0.12);color:#8b5cf6">4.2</div>
+                </div>
+                <div class="popup-row">
+                  <div style="font-size:9px;color:#f59e0b;letter-spacing:1px;flex-shrink:0">★★★☆☆</div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-50"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(245,158,11,0.12);color:#f59e0b">3.1</div>
+                </div>
+                <div class="popup-row">
+                  <div style="font-size:9px;color:#f59e0b;letter-spacing:1px;flex-shrink:0">★★☆☆☆</div>
+                  <div class="popup-row-lines">
+                    <div class="popup-row-line w-full"></div>
+                    <div class="popup-row-line w-50"></div>
+                  </div>
+                  <div class="popup-row-badge" style="background:rgba(239,68,68,0.1);color:#ef4444">2.0</div>
+                </div>
+              </div>
+              <div class="popup-footer">
+                <div class="popup-footer-text">RateMyProfessors</div>
+                <div class="popup-footer-dot" style="background:#8b5cf6;box-shadow:0 0 5px #8b5cf6"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="coming-soon" id="roadmap">
+    <div class="container">
+      <div class="section-label animate-up">Roadmap</div>
+      <h2 class="section-title animate-up delay-1">What's coming next</h2>
+      <p class="section-sub animate-up delay-2">More extensions in the works. All free, all student-focused.</p>
+      <div class="coming-grid">
+        <div class="coming-card animate-up">
+          <div class="coming-icon">📌</div>
+          <div class="coming-name">PagePinch</div>
+          <div class="coming-desc">Compare textbook prices across Amazon, Chegg, ThriftBooks, AbeBooks, and more. Never overpay for textbooks again.</div>
+          <span class="coming-pill">Coming to Store</span>
+        </div>
+        <div class="coming-card animate-up delay-1">
+          <div class="coming-icon">📊</div>
+          <div class="coming-name">GradeGuard</div>
+          <div class="coming-desc">Inject a "what do I need on the final?" calculator directly into your Canvas grade pages.</div>
+          <span class="coming-pill">Coming Soon</span>
+        </div>
+        <div class="coming-card animate-up delay-2">
+          <div class="coming-icon">🍕</div>
+          <div class="coming-name">CalCheck</div>
+          <div class="coming-desc">Right-click any food on a webpage to get instant calorie and macro data without switching tabs.</div>
+          <span class="coming-pill">Coming Soon</span>
+        </div>
+        <div class="coming-card animate-up delay-3">
+          <div class="coming-icon">📈</div>
+          <div class="coming-name">TickerSnap</div>
+          <div class="coming-desc">Highlight any stock ticker on any webpage for an instant price card popup. No tab switching.</div>
+          <span class="coming-pill">Coming Soon</span>
+        </div>
+        <div class="coming-card animate-up delay-4">
+          <div class="coming-icon">💡</div>
+          <div class="coming-name">Your Idea?</div>
+          <div class="coming-desc">Have a tool you wish existed? Open an issue on GitHub and it might become the next Campus Stack extension.</div>
+          <span class="coming-pill">Suggest</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <div class="section-label animate-up">About</div>
+      <div class="about-inner">
+        <div class="about-text animate-up delay-1">
+          <h2>Built by a student, for students.</h2>
+          <p>Campus Stack is a solo project - every extension is built to solve a real pain point in the college browser experience, from missing assignment deadlines to picking the wrong professor during registration.</p>
+          <p>Everything is free, privacy-minded, and designed to fit directly into the websites students already use every day.</p>
+          <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer" class="btn-primary">☕ Buy me a coffee</a>
+        </div>
+        <div class="about-values animate-up delay-2">
+          <div class="about-val">
+            <div class="about-val-icon">🔒</div>
+            <div class="about-val-text">
+              <strong>Privacy First</strong>
+              <span>No analytics, no tracking, and no unnecessary data collection.</span>
+            </div>
+          </div>
+          <div class="about-val">
+            <div class="about-val-icon">⚡</div>
+            <div class="about-val-text">
+              <strong>Zero Friction</strong>
+              <span>Everything works inside pages students already visit - no extra dashboards to manage.</span>
+            </div>
+          </div>
+          <div class="about-val">
+            <div class="about-val-icon">🛠️</div>
+            <div class="about-val-text">
+              <strong>Open Source</strong>
+              <span>Transparent code, straightforward functionality, and a roadmap shaped by student needs.</span>
+            </div>
+          </div>
+          <div class="about-val">
+            <div class="about-val-icon">🎓</div>
+            <div class="about-val-text">
+              <strong>Student-Specific</strong>
+              <span>Built for course registration, Canvas workflows, deadlines, and campus life.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="/" class="footer-logo">
+          <span class="logo-icon">🎓</span>
+          CampusStack
+        </a>
+        <div class="footer-links">
+          <a href="assignwatch/">AssignWatch</a>
+          <a href="proflens/">ProfLens</a>
+          <a href="assignwatch/privacy.html">AssignWatch Privacy</a>
+          <a href="proflens/privacy.html">ProfLens Privacy</a>
+          <a href="https://github.com/nefariousdeed" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer">Support</a>
+        </div>
+        <span class="footer-copy">© 2026 Campus Stack. Free and open source.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

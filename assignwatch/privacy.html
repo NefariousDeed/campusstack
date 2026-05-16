@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AssignWatch — Privacy Policy | CampusStack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #080b12; --surface: #0e1220; --border: #1f2937;
+      --blue: #3b82f6; --text: #f0f4ff; --muted: #6b7a96; --subtle: #1c2436;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; line-height: 1.7; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 24px; height: 56px; display: flex; align-items: center; }
+    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
+    .logo-icon { width: 24px; height: 24px; background: linear-gradient(135deg, #1d4ed8, #3b82f6); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+    .back { margin-left: auto; font-size: 0.82rem; color: var(--muted); text-decoration: none; }
+    .back:hover { color: var(--text); }
+    main { max-width: 700px; margin: 60px auto; padding: 0 24px 80px; }
+    .ext-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(59,130,246,0.1); border: 1px solid rgba(59,130,246,0.2); border-radius: 8px; padding: 6px 14px; font-size: 0.82rem; font-weight: 600; color: var(--blue); margin-bottom: 24px; }
+    h1 { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .updated { font-size: 0.82rem; color: var(--muted); margin-bottom: 48px; }
+    .summary-box { background: rgba(59,130,246,0.07); border: 1px solid rgba(59,130,246,0.2); border-radius: 12px; padding: 20px 24px; margin-bottom: 48px; }
+    .summary-box p { font-size: 0.95rem; color: #93c5fd; line-height: 1.6; margin: 0; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin: 36px 0 12px; color: var(--text); }
+    p { color: #9ca3af; font-size: 0.925rem; margin-bottom: 14px; }
+    ul { color: #9ca3af; font-size: 0.925rem; padding-left: 20px; margin-bottom: 14px; }
+    ul li { margin-bottom: 6px; }
+    a { color: var(--blue); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="https://campusstack.dev" class="nav-logo"><span class="logo-icon">🎓</span> CampusStack</a>
+    <a href="https://campusstack.dev" class="back">← Back to CampusStack</a>
+  </nav>
+  <main>
+    <span class="ext-badge">📋 AssignWatch</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <div class="summary-box">
+      <p><strong>Short version:</strong> AssignWatch stores your Canvas API token locally on your device only. We collect no personal data, send nothing to external servers, and have no analytics or tracking of any kind.</p>
+    </div>
+
+    <h2>1. What data does AssignWatch access?</h2>
+    <p>AssignWatch requires a Canvas LMS API token to fetch your assignment data. This token is:</p>
+    <ul>
+      <li>Stored exclusively in Chrome's local storage on your device</li>
+      <li>Never transmitted to any CampusStack or third-party server</li>
+      <li>Used only to make direct API requests from your browser to your institution's Canvas instance</li>
+    </ul>
+
+    <h2>2. What data is collected or stored?</h2>
+    <p>AssignWatch does not collect, store, or transmit any personal data. Specifically:</p>
+    <ul>
+      <li>No names, emails, or student IDs are collected</li>
+      <li>No assignment content is stored beyond your local browser cache</li>
+      <li>No usage analytics or telemetry of any kind</li>
+      <li>No cookies or tracking pixels</li>
+    </ul>
+
+    <h2>3. Does AssignWatch share data with third parties?</h2>
+    <p>No. AssignWatch makes no outbound requests except directly to your Canvas domain (the one you configure in Settings). No data is shared with CampusStack, advertisers, or any other third parties.</p>
+
+    <h2>4. Gmail integration</h2>
+    <p>AssignWatch's optional Gmail import feature reads assignment-related emails to detect due dates. This access is:</p>
+    <ul>
+      <li>Read-only — AssignWatch never sends, modifies, or deletes emails</li>
+      <li>Scoped only to emails matching Canvas-related subjects</li>
+      <li>Processed locally in your browser, not on any external server</li>
+    </ul>
+
+    <h2>5. Permissions explained</h2>
+    <ul>
+      <li><strong>storage</strong> — Saves your Canvas domain, token, and cached assignment data locally</li>
+      <li><strong>notifications</strong> — Sends due-date reminder notifications</li>
+      <li><strong>alarms</strong> — Schedules background refresh checks</li>
+      <li><strong>host_permissions (Canvas domain)</strong> — Makes API requests to your Canvas instance</li>
+    </ul>
+
+    <h2>6. How to delete your data</h2>
+    <p>To remove all data stored by AssignWatch, go to <strong>chrome://extensions</strong>, find AssignWatch, click "Details," then "Clear site data." You can also uninstall the extension to remove all associated data.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>If this policy changes materially, the "Last updated" date above will be revised. Continued use of AssignWatch after changes constitutes acceptance of the updated policy.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions? Open an issue on <a href="https://github.com/nefariousdeed" target="_blank" rel="noopener">GitHub</a>.</p>
+
+    <hr />
+    <p style="font-size:0.8rem; color: var(--muted);">AssignWatch is part of the <a href="https://campusstack.dev">CampusStack</a> suite of free Chrome extensions for students.</p>
+  </main>
+</body>
+</html>
