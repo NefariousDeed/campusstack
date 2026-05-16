@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ProfLens - Campus Stack</title>
+  <meta name="description" content="RateMyProfessors ratings overlaid directly on your course registration page. Pick better professors before you commit to a class.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">
+        <span class="logo-icon">🎓</span>
+        CampusStack
+      </a>
+      <div class="nav-links">
+        <a href="../#extensions">Extensions</a>
+        <a href="../#about">About</a>
+        <a href="../">Back to all extensions</a>
+        <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer">☕ Support</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="container">
+      <div class="detail-hero-badge animate-up">
+        <a href="../">← Campus Stack</a>
+        <span class="sep">·</span>
+        <span>ProfLens</span>
+      </div>
+      <div class="detail-icon purple animate-up delay-1">🔍</div>
+      <h1 class="animate-up delay-2">ProfLens</h1>
+      <p class="animate-up delay-3">RateMyProfessors ratings overlaid directly on your course registration page. Pick the best professor before you commit to a class - without ever leaving the page.</p>
+      <div class="detail-tags animate-up delay-4">
+        <span class="ext-tag free">Free</span>
+        <span class="ext-tag live">Live</span>
+        <span class="ext-tag mv3">MV3</span>
+        <span class="ext-tag live">Works Everywhere</span>
+      </div>
+      <div class="detail-cta-group animate-up delay-5">
+        <a href="https://chromewebstore.google.com/detail/proflens/adcnbjmmnhijnghhgcfhgnbnobldcikc" target="_blank" rel="noopener noreferrer" class="btn-primary">Add to Chrome</a>
+        <a href="privacy.html" class="btn-ghost">View Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label animate-up">Features</div>
+      <h2 class="section-title animate-up delay-1">Everything you need to choose professors with confidence</h2>
+      <div class="feature-grid">
+        <div class="feature-card animate-up">
+          <div class="feature-card-icon">🎓</div>
+          <div class="feature-card-title">Works on Your School's Site</div>
+          <div class="feature-card-desc">ProfLens auto-detects professor names on your university's course catalog - no configuration needed.</div>
+        </div>
+        <div class="feature-card animate-up delay-1">
+          <div class="feature-card-icon">⚡</div>
+          <div class="feature-card-title">Instant Ratings Overlay</div>
+          <div class="feature-card-desc">Ratings appear directly next to professor names on the registration page. No tab switching.</div>
+        </div>
+        <div class="feature-card animate-up delay-2">
+          <div class="feature-card-icon">📊</div>
+          <div class="feature-card-title">Full RMP Stats</div>
+          <div class="feature-card-desc">See overall rating, difficulty score, and the "would take again" percentage at a glance.</div>
+        </div>
+        <div class="feature-card animate-up delay-3">
+          <div class="feature-card-icon">🔄</div>
+          <div class="feature-card-title">Session Cache</div>
+          <div class="feature-card-desc">Ratings are cached for your session so the page stays fast even when you scroll back up.</div>
+        </div>
+        <div class="feature-card animate-up delay-4">
+          <div class="feature-card-icon">🔒</div>
+          <div class="feature-card-title">Zero Data Collection</div>
+          <div class="feature-card-desc">ProfLens only looks up professor names. No personal data, no tracking, no accounts.</div>
+        </div>
+        <div class="feature-card animate-up delay-5">
+          <div class="feature-card-icon">🌐</div>
+          <div class="feature-card-title">Wide University Support</div>
+          <div class="feature-card-desc">Works across most university course registration systems. If yours isn't supported, open a GitHub issue.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-label animate-up">How It Works</div>
+      <h2 class="section-title animate-up delay-1">Use it the moment you install</h2>
+      <div class="steps">
+        <div class="step animate-up">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">Install from Chrome Web Store</div>
+            <div class="step-desc">One click, no configuration. ProfLens is ready the moment it installs.</div>
+          </div>
+        </div>
+        <div class="step animate-up delay-1">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">Go to your course registration page</div>
+            <div class="step-desc">Navigate to your university's course catalog or registration portal as normal.</div>
+          </div>
+        </div>
+        <div class="step animate-up delay-2">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">Ratings appear automatically</div>
+            <div class="step-desc">ProfLens detects professor names and fetches their RateMyProfessors data. Ratings appear inline.</div>
+          </div>
+        </div>
+        <div class="step animate-up delay-3">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">Pick your professors with confidence</div>
+            <div class="step-desc">Compare options side by side without bouncing between tabs.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="privacy-strip animate-up">
+      <div class="privacy-strip-icon">🔒</div>
+      <div>
+        <div class="privacy-strip-title">Your browsing stays your business</div>
+        <div class="privacy-strip-text">ProfLens only looks up professor names from RateMyProfessors. No personal data is ever sent or stored. Session cache lives only in your browser's memory and clears when you close the tab.</div>
+        <a href="privacy.html" class="privacy-strip-link">Read full privacy policy →</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="detail-cta-section">
+    <div class="container">
+      <h2 class="animate-up">Ready to pick better professors?</h2>
+      <p class="animate-up delay-1">Free forever, zero setup, and built to stay out of your way.</p>
+      <div class="detail-cta-group animate-up delay-2" style="justify-content:center;">
+        <a href="https://chromewebstore.google.com/detail/proflens/adcnbjmmnhijnghhgcfhgnbnobldcikc" target="_blank" rel="noopener noreferrer" class="btn-primary">Add to Chrome</a>
+        <a href="../" class="back-link">← Back to all extensions</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../" class="footer-logo">
+          <span class="logo-icon">🎓</span>
+          CampusStack
+        </a>
+        <div class="footer-links">
+          <a href="../assignwatch/">AssignWatch</a>
+          <a href="../proflens/">ProfLens</a>
+          <a href="../assignwatch/privacy.html">AssignWatch Privacy</a>
+          <a href="../proflens/privacy.html">ProfLens Privacy</a>
+          <a href="https://github.com/nefariousdeed" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer">Support</a>
+        </div>
+        <span class="footer-copy">© 2026 Campus Stack. Free and open source.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

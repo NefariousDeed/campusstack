@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AssignWatch - Campus Stack</title>
+  <meta name="description" content="Never miss a Canvas deadline again. AssignWatch shows all your assignments across every course in one clean popup, sorted by urgency.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../style.css">
+  <script src="../main.js" defer></script>
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="../" class="nav-logo">
+        <span class="logo-icon">🎓</span>
+        CampusStack
+      </a>
+      <div class="nav-links">
+        <a href="../#extensions">Extensions</a>
+        <a href="../#about">About</a>
+        <a href="../">Back to all extensions</a>
+        <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer">☕ Support</a>
+      </div>
+      <button class="nav-hamburger" id="nav-hamburger" aria-label="Toggle menu" aria-expanded="false" type="button">
+        <svg width="20" height="20" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <section class="detail-hero">
+    <div class="container">
+      <div class="detail-hero-badge animate-up">
+        <a href="../">← Campus Stack</a>
+        <span class="sep">·</span>
+        <span>AssignWatch</span>
+      </div>
+      <div class="detail-icon blue animate-up delay-1">📋</div>
+      <h1 class="animate-up delay-2">AssignWatch</h1>
+      <p class="animate-up delay-3">Never miss a Canvas deadline again. See every assignment across all your courses in one clean popup - sorted by urgency, color-coded by course.</p>
+      <div class="detail-tags animate-up delay-4">
+        <span class="ext-tag free">Free</span>
+        <span class="ext-tag live">Live</span>
+        <span class="ext-tag mv3">MV3</span>
+        <span class="ext-tag live">Canvas LMS</span>
+      </div>
+      <div class="detail-cta-group animate-up delay-5">
+        <a href="https://chromewebstore.google.com/detail/assignwatch/hmjgbdkllpommkibiebcnhfihbcpmija" target="_blank" rel="noopener noreferrer" class="btn-primary">Add to Chrome</a>
+        <a href="privacy.html" class="btn-ghost">View Privacy Policy</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-label animate-up">Features</div>
+      <h2 class="section-title animate-up delay-1">Everything you need to stay on top of your coursework</h2>
+      <div class="feature-grid">
+        <div class="feature-card animate-up">
+          <div class="feature-card-icon">⏱</div>
+          <div class="feature-card-title">Live Deadline Countdowns</div>
+          <div class="feature-card-desc">Assignments due within 12 hours show a live countdown timer so you always know what's most urgent.</div>
+        </div>
+        <div class="feature-card animate-up delay-1">
+          <div class="feature-card-icon">🎨</div>
+          <div class="feature-card-title">Per-Course Color Coding</div>
+          <div class="feature-card-desc">Each course gets its own color. Spot CHEM 101 vs CS 201 at a glance without reading a word.</div>
+        </div>
+        <div class="feature-card animate-up delay-2">
+          <div class="feature-card-icon">📌</div>
+          <div class="feature-card-title">Pin High-Priority Work</div>
+          <div class="feature-card-desc">Pin any assignment to the top regardless of due date. Great for projects you need to chip away at over time.</div>
+        </div>
+        <div class="feature-card animate-up delay-3">
+          <div class="feature-card-icon">✅</div>
+          <div class="feature-card-title">Manual Mark Complete</div>
+          <div class="feature-card-desc">Mark assignments done directly in the popup. The badge count only shows what's left.</div>
+        </div>
+        <div class="feature-card animate-up delay-4">
+          <div class="feature-card-icon">📅</div>
+          <div class="feature-card-title">Google Calendar Export</div>
+          <div class="feature-card-desc">One click to add any assignment to your Google Calendar with the correct due date pre-filled.</div>
+        </div>
+        <div class="feature-card animate-up delay-5">
+          <div class="feature-card-icon">🔒</div>
+          <div class="feature-card-title">Fully Local & Private</div>
+          <div class="feature-card-desc">Your Canvas API token never leaves your device. No servers, no tracking, no accounts.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works">
+    <div class="container">
+      <div class="section-label animate-up">How It Works</div>
+      <h2 class="section-title animate-up delay-1">Set up in under a minute</h2>
+      <div class="steps">
+        <div class="step animate-up">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <div class="step-title">Install from Chrome Web Store</div>
+            <div class="step-desc">Click "Add to Chrome" and confirm the extension install. No account needed.</div>
+          </div>
+        </div>
+        <div class="step animate-up delay-1">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <div class="step-title">Open Canvas and grab your token</div>
+            <div class="step-desc">Go to your Canvas account settings, generate an access token, and copy it.</div>
+          </div>
+        </div>
+        <div class="step animate-up delay-2">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <div class="step-title">Paste into AssignWatch</div>
+            <div class="step-desc">Open the extension popup, go to Settings, paste your token. AssignWatch connects instantly.</div>
+          </div>
+        </div>
+        <div class="step animate-up delay-3">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <div class="step-title">Stay on top of everything</div>
+            <div class="step-desc">Your assignments appear automatically, sorted by urgency. Overdue items are highlighted in red.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="privacy-strip animate-up">
+      <div class="privacy-strip-icon">🔒</div>
+      <div>
+        <div class="privacy-strip-title">Your data stays on your device</div>
+        <div class="privacy-strip-text">AssignWatch stores your Canvas token locally using Chrome's secure storage API. The token is only sent directly to your Canvas instance - never to our servers (we don't have any). Zero analytics, zero tracking.</div>
+        <a href="privacy.html" class="privacy-strip-link">Read full privacy policy →</a>
+      </div>
+    </div>
+  </div>
+
+  <section class="detail-cta-section">
+    <div class="container">
+      <h2 class="animate-up">Ready to stop missing deadlines?</h2>
+      <p class="animate-up delay-1">Free forever. No account required. Works with any Canvas instance.</p>
+      <div class="detail-cta-group animate-up delay-2" style="justify-content:center;">
+        <a href="https://chromewebstore.google.com/detail/assignwatch/hmjgbdkllpommkibiebcnhfihbcpmija" target="_blank" rel="noopener noreferrer" class="btn-primary">Add to Chrome</a>
+        <a href="../" class="back-link">← Back to all extensions</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <a href="../" class="footer-logo">
+          <span class="logo-icon">🎓</span>
+          CampusStack
+        </a>
+        <div class="footer-links">
+          <a href="../assignwatch/">AssignWatch</a>
+          <a href="../proflens/">ProfLens</a>
+          <a href="../assignwatch/privacy.html">AssignWatch Privacy</a>
+          <a href="../proflens/privacy.html">ProfLens Privacy</a>
+          <a href="https://github.com/nefariousdeed" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://buymeacoffee.com/nefariousdeed" target="_blank" rel="noopener noreferrer">Support</a>
+        </div>
+        <span class="footer-copy">© 2026 Campus Stack. Free and open source.</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

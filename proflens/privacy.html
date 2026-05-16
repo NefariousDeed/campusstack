@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProfLens — Privacy Policy | CampusStack</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #080b12; --border: #1f2937;
+      --purple: #8b5cf6; --text: #f0f4ff; --muted: #6b7a96; --subtle: #1c2436;
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Plus Jakarta Sans', sans-serif; font-size: 16px; line-height: 1.7; }
+    nav { border-bottom: 1px solid var(--border); padding: 0 24px; height: 56px; display: flex; align-items: center; }
+    .nav-logo { font-family: 'Syne', sans-serif; font-weight: 800; color: var(--text); text-decoration: none; display: flex; align-items: center; gap: 8px; font-size: 1rem; }
+    .logo-icon { width: 24px; height: 24px; background: linear-gradient(135deg, #6d28d9, #8b5cf6); border-radius: 6px; display: flex; align-items: center; justify-content: center; font-size: 12px; }
+    .back { margin-left: auto; font-size: 0.82rem; color: var(--muted); text-decoration: none; }
+    .back:hover { color: var(--text); }
+    main { max-width: 700px; margin: 60px auto; padding: 0 24px 80px; }
+    .ext-badge { display: inline-flex; align-items: center; gap: 8px; background: rgba(139,92,246,0.1); border: 1px solid rgba(139,92,246,0.2); border-radius: 8px; padding: 6px 14px; font-size: 0.82rem; font-weight: 600; color: var(--purple); margin-bottom: 24px; }
+    h1 { font-family: 'Syne', sans-serif; font-size: 2rem; font-weight: 800; letter-spacing: -0.5px; margin-bottom: 8px; }
+    .updated { font-size: 0.82rem; color: var(--muted); margin-bottom: 48px; }
+    .summary-box { background: rgba(139,92,246,0.07); border: 1px solid rgba(139,92,246,0.2); border-radius: 12px; padding: 20px 24px; margin-bottom: 48px; }
+    .summary-box p { font-size: 0.95rem; color: #c4b5fd; line-height: 1.6; margin: 0; }
+    h2 { font-family: 'Syne', sans-serif; font-size: 1.1rem; font-weight: 700; margin: 36px 0 12px; color: var(--text); }
+    p { color: #9ca3af; font-size: 0.925rem; margin-bottom: 14px; }
+    ul { color: #9ca3af; font-size: 0.925rem; padding-left: 20px; margin-bottom: 14px; }
+    ul li { margin-bottom: 6px; }
+    a { color: var(--purple); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    hr { border: none; border-top: 1px solid var(--border); margin: 40px 0; }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="https://campusstack.dev" class="nav-logo"><span class="logo-icon">🎓</span> CampusStack</a>
+    <a href="https://campusstack.dev" class="back">← Back to CampusStack</a>
+  </nav>
+  <main>
+    <span class="ext-badge">🔍 ProfLens</span>
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: May 2026</p>
+
+    <div class="summary-box">
+      <p><strong>Short version:</strong> ProfLens reads professor names from the page you're on, queries RateMyProfessors, and displays ratings inline. No personal data is collected. Nothing is stored beyond a session cache. No tracking whatsoever.</p>
+    </div>
+
+    <h2>1. What data does ProfLens access?</h2>
+    <p>ProfLens reads the text content of course registration and schedule pages to identify professor names. It then queries the public RateMyProfessors API to retrieve ratings. ProfLens does not read any other page content, form data, or credentials.</p>
+
+    <h2>2. What data is collected or stored?</h2>
+    <p>ProfLens collects no personal data. Specifically:</p>
+    <ul>
+      <li>No student names, IDs, or academic records</li>
+      <li>No login credentials or session tokens</li>
+      <li>No usage analytics or telemetry</li>
+      <li>Professor name lookups are cached in memory for the current session only — cleared when the browser is closed</li>
+    </ul>
+
+    <h2>3. RateMyProfessors API</h2>
+    <p>ProfLens sends professor name queries to the public RateMyProfessors GraphQL API. These queries contain only professor names and your configured school ID — no student information. ProfLens is not affiliated with RateMyProfessors. Use of their data is subject to their own terms of service.</p>
+
+    <h2>4. Does ProfLens share data with third parties?</h2>
+    <p>No personal data is shared with anyone. The only outbound requests made are read-only queries to the RateMyProfessors API for professor rating data.</p>
+
+    <h2>5. Permissions explained</h2>
+    <ul>
+      <li><strong>storage</strong> — Saves your configured school name/ID preference locally</li>
+      <li><strong>scripting / content_scripts</strong> — Injects rating badges onto course registration pages</li>
+      <li><strong>host_permissions (ratemyprofessors.com)</strong> — Makes API requests to fetch professor ratings</li>
+    </ul>
+
+    <h2>6. How to delete your data</h2>
+    <p>To remove all locally stored preferences, go to <strong>chrome://extensions</strong>, find ProfLens, and click "Clear site data." Uninstalling the extension also removes all stored data.</p>
+
+    <h2>7. Changes to this policy</h2>
+    <p>If this policy changes materially, the "Last updated" date above will be revised.</p>
+
+    <h2>8. Contact</h2>
+    <p>Questions? Open an issue on <a href="https://github.com/nefariousdeed" target="_blank" rel="noopener">GitHub</a>.</p>
+
+    <hr />
+    <p style="font-size:0.8rem; color: var(--muted);">ProfLens is part of the <a href="https://campusstack.dev">CampusStack</a> suite of free Chrome extensions for students.</p>
+  </main>
+</body>
+</html>
